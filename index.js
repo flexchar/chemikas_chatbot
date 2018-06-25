@@ -7,7 +7,7 @@ const {
 const bodyParser = require('body-parser');
 const bot = require('express')();
 
-const { BOT_PORT = 3001 } = process.env;
+const { PORT = 3001 } = process.env;
 
 bot.use(bodyParser.json());
 bot.use(
@@ -16,8 +16,8 @@ bot.use(
 	})
 );
 
-bot.listen(BOT_PORT, () => {
-	console.log(`Server is listening on ${BOT_PORT}`);
+bot.listen(PORT, () => {
+	console.log(`Server is listening on ${PORT}`);
 });
 
 bot.post('/webhook', (req, res) => {
