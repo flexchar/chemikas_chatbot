@@ -1,0 +1,28 @@
+{
+	"name": "chemikas",
+	"version": "1.0.0",
+	"description": "Messenger Bot'as chemijos tema",
+	"main": "index.js",
+	"author": "Lukas Vanagas",
+	"license": "Copyright",
+	"private": true,
+	"scripts": {
+		"start": "nodemon index.js ",
+		"ngrok": "ngrok http 1337 --log stderr"
+	},
+	"dependencies": {
+		"axios": "^0.18.0",
+		"body-parser": "^1.18.2",
+		"dotenv": "^5.0.1",
+		"express": "^4.16.3",
+		"node-wit": "^5.0.0"
+	},
+	"devDependencies": {
+		"eslint": "^4.19.1",
+		"eslint-config-airbnb-base": "^12.1.0",
+		"eslint-config-prettier": "^2.9.0",
+		"eslint-plugin-import": "^2.11.0",
+		"eslint-plugin-prettier": "^2.6.0",
+		"prettier": "^1.12.1"
+	}
+}
